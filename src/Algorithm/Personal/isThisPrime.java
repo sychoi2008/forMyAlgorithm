@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.Personal;
 
 public class isThisPrime {
     public static boolean checkPrime(int num) {

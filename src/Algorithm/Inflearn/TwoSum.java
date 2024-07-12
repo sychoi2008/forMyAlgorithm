@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.Inflearn;
 
 import java.util.Arrays;
 

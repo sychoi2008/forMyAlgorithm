@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.Personal;
 
 public class Combination {
     static int [] arr;

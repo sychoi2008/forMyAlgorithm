@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.Personal;
 
 public class Prime {
     public static boolean [] primeArr;
