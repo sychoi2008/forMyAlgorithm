@@ -6,7 +6,7 @@ public class NumberOfIslands {
     static boolean isInRange(int r, int c, int row_length, int col_length) {
         return ((r>=0 && r<row_length) && (c>=0 && c<col_length));
     }
-    public static int numIslands(char[][] grid) {
+    public static int numIslands(char[][] grid) { // 하나하나 bfs 돌리기 위한 함수
         int numberOfIslands = 0; // 섬의 개수를 넣을 변수
         int row_length = grid.length; // 행의 개수
         int col_length = grid[0].length; // 열의 개수
@@ -37,12 +37,14 @@ public class NumberOfIslands {
         q.offer(new Pair<>(r,c)); // queue에다가 x,y를 넣어줌
         visited[r][c] = true; // 방문했다를 표시함
 
+        // bfs 시작
         while(!q.isEmpty()) {
             Pair<Integer, Integer> cur = q.poll(); // 현재 노드의 인덱스를 출력
             int cur_x = cur.getLeft(); // 현재 x 좌표
             int cur_y = cur.getRight(); // 현재 y 좌표
 
-            // (x,y)노드에 연결된 다음 노드 찾기 -> (x,y)의 상하좌우 살펴보기
+            // 현재노드에 연결된 노드들을 모두 방문하기 -> 현재 노드의 상하좌우 살펴보기
+            // 원래 기본 bfs에서도 연결된 다음 노드로 가기 위해 for문을 돌렸음
             for(int [] d : dir) { //ex : {1,0}을 떼오는 것. 1차원 배열 떼오기
                 int next_x = cur_x + d[0];
                 int next_y = cur_y + d[1];
