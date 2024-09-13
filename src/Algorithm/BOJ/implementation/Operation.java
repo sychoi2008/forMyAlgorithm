@@ -1,4 +1,4 @@
-package Algorithm.BOJ.구현;
+package Algorithm.BOJ.implementation;
 import java.io.*;
 import java.util.*;
 

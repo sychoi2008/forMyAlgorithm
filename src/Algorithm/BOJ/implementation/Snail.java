@@ -1,6 +1,5 @@
-package Algorithm.BOJ.구현;
+package Algorithm.BOJ.implementation;
 
-import java.util.*;
 import java.io.*;
 
 public class Snail {

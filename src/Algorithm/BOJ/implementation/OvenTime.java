@@ -1,10 +1,8 @@
-package Algorithm.BOJ.구현;
+package Algorithm.BOJ.implementation;
 
-import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-import java.util.*;
 
 public class OvenTime {
     public class Main {

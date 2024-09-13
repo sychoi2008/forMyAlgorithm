@@ -1,4 +1,4 @@
-package Algorithm.BOJ.구현;
+package Algorithm.BOJ.implementation;
 
 //https://stdio-han.tistory.com/106
 import java.util.*;

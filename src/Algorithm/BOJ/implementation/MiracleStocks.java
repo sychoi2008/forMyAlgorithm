@@ -1,7 +1,6 @@
-package Algorithm.BOJ.구현;
+package Algorithm.BOJ.implementation;
 
 import java.io.*;
-import java.util.*;
 
 public class MiracleStocks {
     public static void main(String[] args) throws IOException {
