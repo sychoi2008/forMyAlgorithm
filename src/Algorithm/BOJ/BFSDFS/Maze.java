@@ -17,12 +17,12 @@ public class Maze {
         int steps = 0; // 최종 리턴
         int [][] direction = {{-1,0},{0,1},{1,0},{0,-1}};
 
-        Queue<Spot2> queue = new LinkedList<>();
-        queue.offer(new Spot2(0,0,1));
+        Queue<Spot> queue = new LinkedList<>();
+        queue.offer(new Spot(0,0,1));
         visited[0][0] = true;
 
         while(!queue.isEmpty()) {
-            Spot2 cur = queue.poll();
+            Spot cur = queue.poll();
             int cX = cur.x;
             int cY = cur.y;
             if(cX == N-1 && cY == M-1) {
@@ -33,7 +33,7 @@ public class Maze {
                 int nX = cX + dir[0];
                 int nY = cY + dir[1];
                 if(isInRange(nX, nY) && grid[nX][nY] == '1' && !visited[nX][nY]) {
-                    queue.offer(new Spot2(nX, nY, cur.step+1));
+                    queue.offer(new Spot(nX, nY, cur.step+1));
                     visited[nX][nY] = true;
                 }
             }
